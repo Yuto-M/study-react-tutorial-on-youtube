@@ -14,3 +14,4 @@
 - stateの変更はthis.setStateで{}を引数に渡して行う。stateの一部のプロパティのみを指定して変更することも可能。
 - formがsubmitされた時のイベントハンドリングは、buttonのonClickではなく、formのonSubmitで指定しないとenterキー押下時のsubmitがハンドリングできない
   - formがsubmitされるとデフォルトでブラウザの更新がかかるため、e.preventDefault()で止める。
+- create-react-appして作成される、serviceWorker.jsはassetsファイルのcacheをしてくれる。
