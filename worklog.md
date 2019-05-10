@@ -12,3 +12,5 @@
 - イベントハンドラーのメソッドの中でのthis.stateでthisがcomponentを参照できないのは、jsのthisがどこで書かれているかではなく、どのように呼び出されているかによって決まるため参照できない。ちなみに、render()の中でthisがcomponentを参照できるのは、render()がreactで実装されているbuilt-inメソッドで、reactが内部的に、thisで参照できるように設定しているから。
   - 通常のメソッド指定ではなく、arrow functionを使用してのメソッド呼び出しに変更するとthisでcomponentが指定できるようになる。arrow function内でのthisはthisが書かれている外側を参照するから。
 - stateの変更はthis.setStateで{}を引数に渡して行う。stateの一部のプロパティのみを指定して変更することも可能。
+- formがsubmitされた時のイベントハンドリングは、buttonのonClickではなく、formのonSubmitで指定しないとenterキー押下時のsubmitがハンドリングできない
+  - formがsubmitされるとデフォルトでブラウザの更新がかかるため、e.preventDefault()で止める。
