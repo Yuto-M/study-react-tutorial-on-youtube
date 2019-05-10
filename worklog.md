@@ -7,3 +7,5 @@
 - render()メソッドでreturnすることのできるhtml要素は１つのみ。ネストは可能。
 - JSXでは、class属性はclassNameで設定。classはjsの予約語なので。
 - {} curly brathesを使用すればその中ではjsが書ける
+- reactの開発者ツールを使用してcomponentのpropsとstateが確認でき、一時的にデータを変更して表示を確認することもできる
+  - reactのマークが青はproductionビルド、赤はdevelopmentビルドされた状態を表す。
