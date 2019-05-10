@@ -15,3 +15,5 @@
 - formがsubmitされた時のイベントハンドリングは、buttonのonClickではなく、formのonSubmitで指定しないとenterキー押下時のsubmitがハンドリングできない
   - formがsubmitされるとデフォルトでブラウザの更新がかかるため、e.preventDefault()で止める。
 - create-react-appして作成される、serviceWorker.jsはassetsファイルのcacheをしてくれる。
+- 配列の各要素をreactで記述した際には、それぞれの要素にidをもたせる必要がある。そうしないとreactがどの要素が変更されたかが特定できないため。
+https://reactjs.org/docs/lists-and-keys.html#keys
