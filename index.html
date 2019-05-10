@@ -17,15 +17,20 @@
                 age: 30,
             };
 
-            handleClick(e) {
-                console.log(e.target);
+            handleClick = (e) => {
+                // console.log(e.target);
+                this.setState({
+                    name: 'miyakawa',
+                    age: 25,
+                });
+                console.log(this.state);
             }
 
-            handleMouseOver(e) {
+            handleMouseOver = (e) => {
                 console.log(e.target, e.pageX);
             }
 
-            handleCopy(e) {
+            handleCopy = (e) => {
                 console.log('hoge');
             }
 
