@@ -21,3 +21,4 @@ https://reactjs.org/docs/lists-and-keys.html#keys
   - container componentはUIに関してではなく、dataに関係するcomponent。dataをstateとして保持する関係からclass componentとなる。
   - UI componentは、stateを持たず、dataはcontainer componentのstateをprops経由で受け取る形になる。その受け取ったdataをどのように表現するかのUI部分を担うのが主な役割。function componentとして実装する。
 - functional componentでは、propsに自動的にpropsが参照できるわけではないので、引数で受け取ってそれを使用する形になる。
+- domをreturnする中でdomの組み立てを実装するのはわかりにくいのでしない方がよい。domの組み立てのようなlogicが関わる部分はdomをreturnする箇所で実装するのではなく、外側でdomを変数として持たせる方がよい。
