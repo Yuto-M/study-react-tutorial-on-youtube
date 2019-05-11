@@ -17,3 +17,7 @@
 - create-react-appして作成される、serviceWorker.jsはassetsファイルのcacheをしてくれる。
 - 配列の各要素をreactで記述した際には、それぞれの要素にidをもたせる必要がある。そうしないとreactがどの要素が変更されたかが特定できないため。
 https://reactjs.org/docs/lists-and-keys.html#keys
+- componentには2パターンあり、container componentとUI componentがある（概念的に）。
+  - container componentはUIに関してではなく、dataに関係するcomponent。dataをstateとして保持する関係からclass componentとなる。
+  - UI componentは、stateを持たず、dataはcontainer componentのstateをprops経由で受け取る形になる。その受け取ったdataをどのように表現するかのUI部分を担うのが主な役割。function componentとして実装する。
+- functional componentでは、propsに自動的にpropsが参照できるわけではないので、引数で受け取ってそれを使用する形になる。
