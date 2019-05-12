@@ -27,3 +27,5 @@ https://reactjs.org/docs/lists-and-keys.html#keys
   - react-router-domパッケージをインスコ
   - routingを実装するために、BrowserRouterタグでアプリケーションを内包する
     - BrowserRouterタグで囲ったらRouteタグでroutingを決め、対応するcomponentをセットする
+    - aタグの代わりにLinkタグを使用してリンクを作成することにより、リクエストを送信しないようにできるが、内部的にはe.preventDefault()みたいなことをreact-router-domでしている。
+    - Linkタグではなく、NavLinkタグを使用すると選択したリンクのclassにactiveがつく
