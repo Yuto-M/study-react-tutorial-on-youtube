@@ -6,3 +6,5 @@ https://reactjs.org/docs/lists-and-keys.html#keys
 https://blog.pusher.com/css-modules-react/
 - reactのlifecycle図
 http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+- hocの説明
+https://reactjs.org/docs/higher-order-components.html
